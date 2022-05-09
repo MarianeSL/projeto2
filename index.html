@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney+ | As melhores histórias em um só lugar</title>
+
+    <link rel="stylesheet" href="style.css">
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script></head>
+<body>
+    <div class="container">
+      <header>
+          <button class="btn-login">ENTRAR</button>
+          <button class="btn-logout">LOGOUT</button>
+      </header>
+      <div class="content">
+          <aside class="initial-content">
+              <h1>As melhores histórias em um só lugar.</h1>
+              <img src="//cnbl-cdn.bamgrid.com/assets/7ecc8bcb60ad77193058d63e321bd21cbac2fc67281dbd9927676ea4a4c83594/original" alt="Logo da Disney">
+              <button class="btn-sign">ASSINE A OFERTA COMBO+</button>
+              <div class="container-links">
+                  <a href="/">Assinar somente o Disney+ mensal</a>
+                  <span>|</span>
+                  <a href="/">Assinar somente o Disney+ anual</a>
+              </div>
+          </aside>
+
+          <aside class="login-content">
+              <label for="email">E-mail</label>
+              <input type="text" placeholder="Digite seu e-mail" id="email" name="email">
+              <label for="password">Senha</label>
+            	<input type="password" placeholder="Digite a senha" id="password" name="password">
+			    		<button type="submit" class="btn-login-page">ENTRAR</button>
+          </aside>
+
+					<aside class="search-content">
+						<div class="search">
+							<input type="text" name="search" id="search" placeholder="Digite o título do livro em inglês">
+							<button type="submit" class="btn-search">Buscar</button>
+						</div>
+
+						<ul class="books-list">
+						</ul>
+		
+					</aside>
+      </div>
+    </div>
+
+
+    <script src="dom.js"></script>
+		<script src="./script.js"></script>
+</body>
+</html>
