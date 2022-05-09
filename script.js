@@ -104,7 +104,7 @@
       handleSearch: async function handleSearch() {
         var $inputSearch = $('#search').get();
         
-        const response = await axios.get('http://openlibrary.org/search.json?title=' + $inputSearch.value)
+        const response = await axios.get('https://openlibrary.org/search.json?title=' + $inputSearch.value)
        
         var $ul = $('.books-list').get();
         const $fragment = doc.createDocumentFragment();
